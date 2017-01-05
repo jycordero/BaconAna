@@ -15,7 +15,7 @@ namespace baconhep
       csv(-2),
       qgid(-2), axis2(0), ptD(0), mult(0),
       q(0),
-      mva(-2), beta(0), betaStar(0), dR2Mean(0),
+      puid(0), mva(-2), beta(0), betaStar(0), dR2Mean(0),
       pullY(0), pullPhi(0), chPullY(0), chPullPhi(0), neuPullY(0), neuPullPhi(0),
       chEmFrac(0), neuEmFrac(0), chHadFrac(0), neuHadFrac(0), muonFrac(0),
       genpt(0), geneta(0), genphi(0), genm(0),
@@ -32,6 +32,7 @@ namespace baconhep
       float          qgid, axis2, ptD;                                        // q/g discriminator and input variables
       int            mult;
       float          q;                                                       // Charge for jet and subjets
+      int            puid;
       float          mva;                                                     // PU discriminator MVA
       float          beta, betaStar, dR2Mean;                                 // input variables for PU and q/g discriminators
       float          pullY, pullPhi;                                          // Jet pull
