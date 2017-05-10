@@ -3,9 +3,7 @@
 
 #include "BaconAna/DataFormats/interface/BaconAnaDefs.hh"
 #include <TObject.h>
-#include <TVector3.h>
-
-#include <map>
+//#include <TVector3.h>
 
 namespace baconhep
 {
@@ -32,7 +30,7 @@ namespace baconhep
       nMatchStn(0),
       trkID(-1),
       muIndex(0),
-      dimuonVertex(),
+      //dimuonVertex(),
       hltMatchBits(0)
       {}
       ~TMuon(){}
@@ -61,7 +59,8 @@ namespace baconhep
       unsigned int   nMatchStn;                             // number of stations with muon segments
       int            trkID;                                 // tracker track ID (unique per event)
       int            muIndex;                               // unique index identifying the muon
-      std::map<int, TVector3> dimuonVertex;
+      //std::map<int, TVector3> dimuonVertex;
+      //std::map<int, muVertex> dimuonVertex;
       TriggerObjects hltMatchBits;                          // HLT matching
           
     ClassDef(TMuon,3)
