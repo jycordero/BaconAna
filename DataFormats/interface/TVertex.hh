@@ -13,7 +13,7 @@ namespace baconhep
       nTracksFit(0),
       ndof(0), chi2(0),
       x(0), y(0), z(0),
-      //xerr(0), yerr(0), zerr(0),
+      xerr(0), yerr(0), zerr(0),
       isValid(true)
       {}
       ~TVertex(){}
@@ -23,7 +23,7 @@ namespace baconhep
       float        ndof;        // vertex fit number of degrees of freedom
       float        chi2;        // vertex fit chi-square
       float        x,y,z;       // position
-      //float        xerr,yerr,zerr; // position error
+      float        xerr,yerr,zerr; // position error
       bool         isValid;     // valid vertex flag
 
     ClassDef(TVertex,1)
