@@ -58,7 +58,7 @@ namespace baconhep
       unsigned int   nTkLayers, nPixLayers;                 // number of hit layers in tracker
       unsigned int   nMatchStn;                             // number of stations with muon segments
       int            trkID;                                 // tracker track ID (unique per event)
-      int            muIndex;                               // unique index identifying the muon
+      unsigned int            muIndex;                               // unique index identifying the muon
       //std::map<int, TVector3> dimuonVertex;
       //std::map<int, muVertex> dimuonVertex;
       TriggerObjects hltMatchBits;                          // HLT matching
