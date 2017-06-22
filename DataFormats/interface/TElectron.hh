@@ -55,6 +55,7 @@ namespace baconhep
       int            classification;                           // electron classification
       int            scID;                                     // supercluster ID number (unique per event)
       int            trkID;                                    // track ID number (unique per event)
+      unsigned int            eleIndex;                               // unique index identifying the muon
       TriggerObjects hltMatchBits;                             // HLT matches
       
     ClassDef(TElectron,2)
