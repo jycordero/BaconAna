@@ -14,6 +14,7 @@ namespace baconhep
       ndof(0), chi2(0),
       x(0), y(0), z(0),
       xerr(0), yerr(0), zerr(0),
+      prob(0), rxy(0), rxy_err(0),
       isValid(true)
       {}
       ~TVertex(){}
@@ -24,6 +25,9 @@ namespace baconhep
       float        chi2;        // vertex fit chi-square
       float        x,y,z;       // position
       float        xerr,yerr,zerr; // position error
+      float        prob;        // Chi2 probability
+      float        rxy;         // Transverse distance value
+      float        rxy_err;     // Transverse distance error
       bool         isValid;     // valid vertex flag
 
     ClassDef(TVertex,1)
