@@ -24,7 +24,7 @@ namespace baconhep
       dEtaInSeed(0), dEtaIn(0), dPhiIn(0),
       mva(-999.),
       regscale(0.), regsmear(0.),
-      q(0),
+      q(0), isCC(false),
       isConv(false), nMissingHits(0),
       typeBits(0), fiducialBits(0), classification(-999.),
       scID(-1), trkID(-1),
@@ -51,6 +51,7 @@ namespace baconhep
       float          mvaCat;                                   // electron MVA category
       float          regscale, regsmear;                       // regression scale and smear corrections
       int            q;                                        // charge
+      bool           isCC;                                     // isGsfCtfChargeConsistent (3 charge verification)
       bool           isConv;                                   // identified by track fit based conversion finder?
       unsigned int   nMissingHits;                             // number of missing expected inner hits 
       unsigned int   typeBits;                                 // electron type
@@ -59,10 +60,10 @@ namespace baconhep
       int            classification;                           // electron classification
       int            scID;                                     // supercluster ID number (unique per event)
       int            trkID;                                    // track ID number (unique per event)
-      unsigned int            eleIndex;                        // unique index identifying the muon
+      unsigned int   eleIndex;                                 // unique index identifying the muon
       TriggerObjects hltMatchBits;                             // HLT matches
       
-    ClassDef(TElectron,4)
+    ClassDef(TElectron,5)
   };
 
   enum EEleType
