@@ -220,3 +220,5 @@ HLT_Mu7p5_Track7_Upsilon_v3                       hltMu7p5Track7UpsilonTrackMass
 HLT_Dimuon0_Upsilon_Muon_v3                       hltVertexmumuFilterUpsilonMuon                            1
 HLT_Dimuon8_Upsilon_Barrel_v4                         hltDisplacedmumuFilterDimuon8UpsilonBarrel                        1
 HLT_Dimuon13_Upsilon_v3                           hltDisplacedmumuFilterDimuon13Upsilon                         1
+HLT_TkMu17_TrkIsoVVL_TkMu8_TrkIsoVVL_DZ_v*      hltL3fL1sDoubleMu114TkFiltered17Q                           1
+HLT_TkMu17_TrkIsoVVL_TkMu8_TrkIsoVVL_DZ_v*      hltDiTkMuonTkFiltered17TkFiltered8                          2
