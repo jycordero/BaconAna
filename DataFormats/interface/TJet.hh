@@ -12,6 +12,7 @@ namespace baconhep
       TJet():
       pt(0), eta(0), phi(0), mass(0), ptRaw(0),unc(0),
       area(0), d0(-999), dz(-999),
+      x(-999), y(-999), z(-999),
       csv(-2),
       qgid(-2), axis2(0), ptD(0), mult(0),
       q(0),
@@ -28,6 +29,7 @@ namespace baconhep
       float          pt, eta, phi, mass, ptRaw, unc;                          // kinematics
       float          area;                                                    // jet area (from FastJet)
       float          d0, dz;                                                  // impact parameter of leading charged constituent
+      float          x, y, z;                                                  // position of leading charged constituent
       float          csv,bmva,cvb,cvl;                                        // CSV b-taggers/c-tagger for the jet
       float          qgid, axis2, ptD;                                        // q/g discriminator and input variables
       int            mult;
