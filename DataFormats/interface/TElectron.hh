@@ -19,6 +19,7 @@ namespace baconhep
       puppiChHadIso(-1), puppiGammaIso(-1), puppiNeuHadIso(-1), 
       puppiChHadIsoNoLep(-1), puppiGammaIsoNoLep(-1), puppiNeuHadIsoNoLep(-1), 
       d0(-999.), dz(-999.), sip3d(-999.),
+      x(-999.), y(-999.), z(-999.),
       sieie(0), e1x5(0), e2x5(0), e5x5(0), r9(0),
       eoverp(0), hovere(0), fbrem(0),
       dEtaInSeed(0), dEtaIn(0), dPhiIn(0),
@@ -42,6 +43,7 @@ namespace baconhep
       float          puppiChHadIso,      puppiGammaIso,      puppiNeuHadIso;  // Puppi Isolation R=0.4
       float          puppiChHadIsoNoLep, puppiGammaIsoNoLep, puppiNeuHadIsoNoLep; // Puppi Isolation R=0.4 no lep
       float          d0, dz, sip3d;                            // impact parameter
+      float          x, y, z;                               // position of innermost (reference) point of best track
       float          sieie, e1x5, e2x5, e5x5, r9;              // shower shape
       float          eoverp;                                   // E/p
       float          hovere;                                   // H/E

@@ -19,6 +19,7 @@ namespace baconhep
       puppiChHadIso(-1), puppiGammaIso(-1), puppiNeuHadIso(-1), 
       puppiChHadIsoNoLep(-1), puppiGammaIsoNoLep(-1), puppiNeuHadIsoNoLep(-1), 
       d0(-999.), dz(-999.), sip3d(-999.),
+      x(-999.), y(-999.), z(-999.),
       tkNchi2(-999.), muNchi2(-999.),
       trkKink(0), glbKink(0),
       trkHitFrac(0), chi2LocPos(-999.), segComp(-999.), caloComp(-999.),
@@ -44,6 +45,7 @@ namespace baconhep
       float          puppiChHadIso,      puppiGammaIso,      puppiNeuHadIso;  // Puppi Isolation R=0.4
       float          puppiChHadIsoNoLep, puppiGammaIsoNoLep, puppiNeuHadIsoNoLep; // Puppi Isolation R=0.4 no lep
       float          d0, dz, sip3d;                         // impact parameter
+      float          x, y, z;                               // position of innermost (reference) point of best track
       float          tkNchi2, muNchi2;                      // track fit normalized chi-square
       float          trkKink, glbKink;                      // track kink
       float          trkHitFrac;                            // fraction of valid tracker hits
@@ -61,11 +63,9 @@ namespace baconhep
       int            trkID;                                 // tracker track ID (unique per event)
       int            btt;                                   // best track type
       unsigned int            muIndex;                               // unique index identifying the muon
-      //std::map<int, TVector3> dimuonVertex;
-      //std::map<int, muVertex> dimuonVertex;
       TriggerObjects hltMatchBits;                          // HLT matching
           
-    ClassDef(TMuon,3)
+    ClassDef(TMuon,4)
   };
 
   enum EMuType
