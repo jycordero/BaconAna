@@ -44,7 +44,7 @@ namespace baconhep
       unsigned int   nCharged, nNeutrals, nParticles;                         // constituent multiplicity
       TriggerObjects hltMatchBits;                                            // HLT matching
           
-    ClassDef(TJet,6)
+    ClassDef(TJet,7)
   };
 }
 #endif
