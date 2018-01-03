@@ -51,6 +51,8 @@ namespace baconhep
       float          dEtaInSeed, dEtaIn, dPhiIn;               // track-supercluster matching
       float          mva;                                      // electron ID MVA value
       float          mvaCat;                                   // electron MVA category
+      float          mvaHZZ;                                   // electron HZZ ID MVA value
+      float          mvaHZZCat;                                // electron HZZ MVA category
       float          regscale, regsmear;                       // regression scale and smear corrections
       int            q;                                        // charge
       bool           isCC;                                     // isGsfCtfChargeConsistent (3 charge verification)
@@ -59,13 +61,14 @@ namespace baconhep
       unsigned int   typeBits;                                 // electron type
       unsigned int   fiducialBits;                             // ECAL fiducial region bits
       unsigned int   mvaBit;                                   // Pass Ele MVA working point
+      unsigned int   mvaHZZBit;                                // Pass Ele HZZ MVA ID
       int            classification;                           // electron classification
       int            scID;                                     // supercluster ID number (unique per event)
       int            trkID;                                    // track ID number (unique per event)
       unsigned int   eleIndex;                                 // unique index identifying the muon
       TriggerObjects hltMatchBits;                             // HLT matches
       
-    ClassDef(TElectron,5)
+    ClassDef(TElectron,6)
   };
 
   enum EEleType
@@ -76,7 +79,8 @@ namespace baconhep
   enum EEleId
   {
     kEleMVAMedBit    = 1,
-    kEleMVATrightBit = 2
+    kEleMVATightBit  = 2,
+    kEleMVAHZZBit    = 3
   };
 }
 #endif
