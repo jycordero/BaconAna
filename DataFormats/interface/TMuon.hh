@@ -16,6 +16,7 @@ namespace baconhep
       pfPt(0), pfEta(0), pfPhi(0),
       trkIso(-1), ecalIso(-1), hcalIso(-1),
       chHadIso(-1), gammaIso(-1), neuHadIso(-1), puIso(-1),
+      chHadIso03(-1), gammaIso03(-1), neuHadIso03(-1), puIso03(-1),
       puppiChHadIso(-1), puppiGammaIso(-1), puppiNeuHadIso(-1), 
       puppiChHadIsoNoLep(-1), puppiGammaIsoNoLep(-1), puppiNeuHadIsoNoLep(-1), 
       d0(-999.), dz(-999.), sip3d(-999.),
@@ -42,6 +43,7 @@ namespace baconhep
       float          pfPt, pfEta, pfPhi;                    // matched PFCandidate
       float          trkIso, ecalIso, hcalIso;              // detector isolation (R=0.3)
       float          chHadIso, gammaIso, neuHadIso, puIso;  // PF isolation variables (R=0.4)
+      float          chHadIso03, gammaIso03, neuHadIso03, puIso03;  // PF isolation variables (R=0.3)
       float          puppiChHadIso,      puppiGammaIso,      puppiNeuHadIso;  // Puppi Isolation R=0.4
       float          puppiChHadIsoNoLep, puppiGammaIsoNoLep, puppiNeuHadIsoNoLep; // Puppi Isolation R=0.4 no lep
       float          d0, dz, sip3d;                         // impact parameter
@@ -65,7 +67,7 @@ namespace baconhep
       unsigned int            muIndex;                               // unique index identifying the muon
       TriggerObjects hltMatchBits;                          // HLT matching
           
-    ClassDef(TMuon,4)
+    ClassDef(TMuon,5)
   };
 
   enum EMuType
