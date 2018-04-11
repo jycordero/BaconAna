@@ -47,7 +47,7 @@ namespace baconhep
     unsigned long  hpsDisc;              // HPS tau discriminators
     TriggerObjects hltMatchBits;         // HLT matches
 
-    ClassDef(TTau,2)
+    ClassDef(TTau,3)
   };
   
   enum EHPSDiscriminator{
