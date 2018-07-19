@@ -53,7 +53,7 @@ HLT_IsoMu24_v*                                                            hltL3c
 HLT_IsoTkMu24_eta2p1_v*                                                   hltL3fL1sMu22erL1f0Tkf24QL3trkIsoFiltered0p09                                     1
 HLT_IsoMu24_eta2p1_v*                                                     hltL3crIsoL1sSingleMu22erL1f0L2f10QL3f24QL3trkIsoFiltered0p09                     1
 HLT_IsoTkMu27_v*                                                          hltL3fL1sMu22Or25L1f0Tkf27QL3trkIsoFiltered0p09                                   1
-HLT_IsoMu27_v*                                                            hltL3crIsoL1sMu22Or25L1f0L2f10QL3f27QL3trkIsoFiltered0p09                         1
+HLT_IsoMu27_v*                                                            hltL3crIsoL1sMu22Or25L1f0L2f10QL3f27QL3trkIsoFiltered0p07                         1
 HLT_Mu50_v*                                                               hltL3fL1sMu22Or25L1f0L2f10QL3Filtered50Q                                          1
 HLT_Mu45_eta2p1_v*                                                        hltL3fL1sMu22Or25L1f0L2f10QL3Filtered45e2p1Q                                      1
 HLT_IsoMu17_eta2p1_LooseIsoPFTau20_v*                                     hltL3crIsoL1sMu16erTauJet20erL1f0L2f10QL3f17QL3trkIsoFiltered0p09                 1
