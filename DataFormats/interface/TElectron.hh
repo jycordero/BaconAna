@@ -12,6 +12,7 @@ namespace baconhep
       TElectron():
       pt(0), eta(0), phi(0),
       scEt(0), scEta(0), scPhi(0), ecalEnergy(0),
+      calibPt(0), calibE(0),
       pfPt(0), pfEta(0), pfPhi(0),
       trkIso(-1), ecalIso(-1), hcalIso(-1), hcalDepth1Iso(-1),
       chHadIso(-1), gammaIso(-1), neuHadIso(-1), puIso(-1),
@@ -37,6 +38,7 @@ namespace baconhep
       float          pt, eta, phi;                             // kinematics
       float          scEt, scEta, scPhi;                       // supercluster kinematics
       float          ecalEnergy;                               // ECAL energy
+      float          calibPt, calibE;                          // calibrated kinematics
       float          pfPt, pfEta, pfPhi;                       // matching PF-candidate kinematics
       float          trkIso, ecalIso, hcalIso, hcalDepth1Iso;  // detector isolation
       float          chHadIso, gammaIso, neuHadIso, puIso;     // PF isolation variables
@@ -69,7 +71,7 @@ namespace baconhep
       unsigned int   eleIndex;                                 // unique index identifying the muon
       TriggerObjects hltMatchBits;                             // HLT matches
       
-    ClassDef(TElectron,5)
+    ClassDef(TElectron,6)
   };
 
   enum EEleType
