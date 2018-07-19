@@ -260,3 +260,7 @@ HLT_PFHT380_SixPFJet32_DoublePFBTagDeepCSV_2p2_v* 			  hltBTagPFDeepCSVp075Doubl
 HLT_PFHT430_SixPFJet40_PFBTagCSV_1p5_v* 				  hltBTagPFCSVp080Single 							    1
 HLT_PFMETTypeOne120_PFMHT120_IDTight_v*					  hltPFMETTypeOne120								    1
 HLT_PFMETTypeOne200_HBHE_BeamHaloCleaned_v* 				  hltMETCleanBH80								    1			
+HLT_Mu7p5_Track2_Jpsi_v*                            hltMu7p5Track2JpsiTrackMassFiltered                         1
+HLT_Mu7p5_Track7_Jpsi_v*                            hltMu7p5Track7JpsiTrackMassFiltered                         1
+HLT_Mu7p5_Track2_Upsilon_v*                         hltMu7p5Track2UpsilonTrackMassFiltered                      1
+HLT_Mu7p5_Track7_Upsilon_v*                         hltMu7p5Track7UpsilonTrackMassFiltered                      1  
