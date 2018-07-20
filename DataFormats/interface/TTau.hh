@@ -13,6 +13,7 @@ namespace baconhep
       pt(0), eta(0), phi(0), m(0), e(0),
       q(0),
       dzLeadChHad(-999.),d0LeadChHad(-999.),
+      xLeadChHad(-999.),yLeadChHad(-999.),zLeadChHad(-999.),
       nSignalChHad(0), nSignalGamma(0),decaymode(0),
       antiEleMVA6(0), antiEleMVA6Cat(0),
       rawMuonRejection(0),rawIso3Hits(0), 
@@ -29,6 +30,7 @@ namespace baconhep
     int            q;                    // charge
     float          dzLeadChHad;          // longitudinal impact parameter of leading charged hadron
     float          d0LeadChHad;          // transverse impact parameter of leading charged hadron
+    float          xLeadChHad, yLeadChHad, zLeadChHad;          // position of leading charged hadron
     unsigned int   nSignalChHad;         // number of charged hadrons in tau
     unsigned int   nSignalGamma;         // number of photons in tau     
     int            decaymode;            // decay mode                                                                                         
@@ -45,7 +47,7 @@ namespace baconhep
     unsigned long  hpsDisc;              // HPS tau discriminators
     TriggerObjects hltMatchBits;         // HLT matches
 
-    ClassDef(TTau,2)
+    ClassDef(TTau,3)
   };
   
   enum EHPSDiscriminator{
