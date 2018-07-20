@@ -24,8 +24,8 @@ namespace baconhep
       sieie(0), e1x5(0), e2x5(0), e5x5(0), r9(0),
       eoverp(0), hovere(0), fbrem(0),
       dEtaInSeed(0), dEtaIn(0), dPhiIn(0),
-      mva(-999.),
-      mvaIso(-999.),
+      mva(-999.), mvaCat(-999.),
+      mvaIso(-999.), mvaIsoCat(-999.),
       regscale(0.),regsmear(0.),
       q(0), isCC(false),
       isConv(false), nMissingHits(0),
@@ -71,7 +71,7 @@ namespace baconhep
       unsigned int   eleIndex;                                 // unique index identifying the muon
       TriggerObjects hltMatchBits;                             // HLT matches
       
-    ClassDef(TElectron,6)
+    ClassDef(TElectron,7)
   };
 
   enum EEleType

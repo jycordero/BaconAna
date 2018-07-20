@@ -16,7 +16,7 @@ namespace baconhep
       trkIso(-1), ecalIso(-1), hcalIso(-1),
       chHadIso(-1), gammaIso(-1), neuHadIso(-1),
 //      chHadIsoSelVtx, chHadIso03WstVtx;
-      mva(0),
+      mva(-999.), mvaCat(-999.), 
       hovere(0), sthovere(0), sieie(0), sipip(0), r9(0),
       fiducialBits(0),
       typeBits(0),
@@ -32,7 +32,7 @@ namespace baconhep
       float          trkIso, ecalIso, hcalIso;             // detector isolation
       float          chHadIso, gammaIso, neuHadIso;        // PF isolation variables
 //      float          chHadIsoSelVtx,chHadIso03WstVtx;      // Isolation from the PV vs worst vertex Iso
-      float          mva;                                  // Photon MVA ID
+      float          mva, mvaCat;                                  // Photon MVA ID
       float          hovere;                               // H/E
       float          sthovere;                             // Single tower H/E (https://twiki.cern.ch/twiki/bin/viewauth/CMS/HoverE2012)
       float          sieie, sipip, r9;                     // shower shape
@@ -44,7 +44,7 @@ namespace baconhep
       bool           isConv;                               
       TriggerObjects hltMatchBits;                         // HLT matches
           
-    ClassDef(TPhoton,3)
+    ClassDef(TPhoton,4)
   };
 
   enum EPhotonType
