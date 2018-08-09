@@ -17,7 +17,7 @@ namespace baconhep
       chHadIso(-1), gammaIso(-1), neuHadIso(-1),
 //      chHadIsoSelVtx, chHadIso03WstVtx;
       mva(0),
-      hovere(0), sthovere(0), sieie(0), sipip(0), r9(0),
+      hovere(0), sthovere(0), sieie(0), sipip(0), r9(0), r9_full5x5(0),
       fiducialBits(0),
       typeBits(0),
       scID(-1),
@@ -35,7 +35,7 @@ namespace baconhep
       float          mva;                                  // Photon MVA ID
       float          hovere;                               // H/E
       float          sthovere;                             // Single tower H/E (https://twiki.cern.ch/twiki/bin/viewauth/CMS/HoverE2012)
-      float          sieie, sipip, r9;                     // shower shape
+      float          sieie, sipip, r9, r9_full5x5;         // shower shape
       unsigned int   fiducialBits;                         // ECAL fiducial region
       unsigned int   typeBits;                             // photon type
       int            scID;                                 // supercluster ID (unique per event)
@@ -44,7 +44,7 @@ namespace baconhep
       bool           isConv;                               
       TriggerObjects hltMatchBits;                         // HLT matches
           
-    ClassDef(TPhoton,4)
+    ClassDef(TPhoton,5)
   };
 
   enum EPhotonType
