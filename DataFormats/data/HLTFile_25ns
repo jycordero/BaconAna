@@ -266,4 +266,4 @@ HLT_Mu7p5_Track2_Upsilon_v*                         hltMu7p5Track2UpsilonTrackMa
 HLT_Mu7p5_Track7_Upsilon_v*                         hltMu7p5Track7UpsilonTrackMassFiltered                      1  
 HLT_DoubleMu20_7_Mass0to30_Photon23_v*              hltEG23HEFilter                                             1
 HLT_Mu17_Photon30_IsoCaloId_v*                      hltMu17Photon30IsoCaloIdMuonlegL3Filtered17Q                1
-HLT_Mu17_Photon30_IsoCaloId_v*                      hltMu17Photon30IsoCaloIdPhotonlegTrackIsoFilter             1
+HLT_Mu17_Photon30_IsoCaloId_v*                      hltMu17Photon30IsoCaloIdPhotonlegTrackIsoFilter             2
