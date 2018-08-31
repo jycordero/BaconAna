@@ -222,3 +222,11 @@ HLT_Dimuon8_Upsilon_Barrel_v4                         hltDisplacedmumuFilterDimu
 HLT_Dimuon13_Upsilon_v3                           hltDisplacedmumuFilterDimuon13Upsilon                         1
 HLT_TkMu17_TrkIsoVVL_TkMu8_TrkIsoVVL_DZ_v*      hltL3fL1sDoubleMu114TkFiltered17Q                           1
 HLT_TkMu17_TrkIsoVVL_TkMu8_TrkIsoVVL_DZ_v*      hltDiTkMuonTkFiltered17TkFiltered8                          2
+HLT_Mu17_Photon22_CaloIdL_L1ISO_v*              hltL3fL1sL1Mu5IsoEG18L1f5L2f7L3Filtered17                   1
+HLT_Mu17_Photon22_CaloIdL_L1ISO_v*              hltMu17Photon22CaloIdLL1ISOHEFilter                         2
+HLT_Mu17_Photon30_CaloIdL_L1ISO_v*              hltL3fL1sL1Mu5IsoEG18L1f5L2f7L3Filtered17                   1
+HLT_Mu17_Photon30_CaloIdL_L1ISO_v*              hltMu17Photon30CaloIdLL1ISOHEFilter                         2
+HLT_Mu12_Photon25_CaloIdL_v*                    hltL3fL1sL1Mu5EG20L1f5L2f7L3Filtered12                      1
+HLT_Mu12_Photon25_CaloIdL_v*                    hltMu12Photon25CaloIdLHEFilter                              2
+HLT_Mu12_Photon25_CaloIdL_L1ISO_v*              hltL3fL1sL1Mu5IsoEG18L1f5L2f7L3Filtered12                   1
+HLT_Mu12_Photon25_CaloIdL_L1ISO_v*              hltMu12Photon25CaloIdLL1ISOHEFilter                         2
